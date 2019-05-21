@@ -1,0 +1,19 @@
+canvas {
+    border: 5px solid black;
+}
+
+body {
+    font-family: 'Neucha', cursive;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+}
+
+#circle,
+#rectangle {
+    padding: 10px;
+    width: 370px;
+    height: 500px;
+    border: 2px solid darkgray;
+}
+

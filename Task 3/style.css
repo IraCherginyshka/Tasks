@@ -1,0 +1,11 @@
+#elem {
+    font-family: monospace;
+}
+
+button {
+    background-color: #000087;
+    color: white;
+    height: 30px;
+    border-radius: 7px;
+    margin: 5px;
+}

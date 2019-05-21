@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    text-decoration: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Caveat', cursive;
+    background-image: url("image_pizza/pizza-2804875_1920.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 3.5em;
+    text-align: center;
+    margin: 30px;
+    color: #d8d8d8;
+    letter-spacing: 3px;
+}
+
+#main {
+    width: 90vw;
+    height: 170px;
+    margin: auto;
+}
+
+.chooseDiv {
+    width: 450px;
+    height: 352px;
+    margin-left: 146px;
+    display: inline-block;
+    background-image: url("image_pizza/bg_pizza.jpg");
+    cursor: pointer;
+}
+
+.blockReticle {
+    width: 139px;
+    height: 103px;
+    background-color: lightgrey;
+    margin: 5px;
+    display: inline-block;
+    opacity: .5;
+}
+
+.blockList {
+    width: 437px;
+    height: 49px;
+    background-color: lightgrey;
+    margin: 8px 5px;
+    opacity: .5;
+
+}
+
+#smallReticle {
+    width: 450px;
+    height: 70px;
+    background-color: lightgray;
+    background-image: none;
+    border-radius: 15px 0 0 15px;
+    opacity: .5;
+    margin-left: 190px;
+    padding: 2px 184px;
+    cursor: pointer;
+}
+
+.modifyReticleBlock {
+    width: 20px;
+    height: 19px;
+    background-color: black;
+    margin-right: 2px;
+    display: inline-block;
+}
+
+.modifyReticleBlock:hover {
+    opacity: 0;
+}
+
+#smallList {
+    width: 450px;
+    height: 70px;
+    background-color: lightgray;
+    background-image: none;
+    border-radius: 0 15px 15px 0;
+    opacity: .5;
+    margin-left: 0;
+    padding: 1px 184px;
+    cursor: pointer;
+}
+
+.modifyListBlock {
+    width: 63px;
+    height: 9px;
+    background-color: black;
+    margin: 2px;
+}
+
+.modifyListBlock:hover {
+    opacity: 0;
+}
+
+#div1 td {
+    height: 50px;
+    border: 3px solid black;
+    border-collapse: collapse;
+    cursor: pointer;
+}
+
+.colName {
+    width: 700px;
+    background-color: lightgray;
+    opacity: .7;
+    font-weight: bold;
+    font-size: 3em;
+    padding: 5px 30px;
+    border-radius: 15px 0 0 15px;
+}
+
+.colPrice {
+    width: 300px;
+    background-color: lightgray;
+    opacity: .7;
+    font-weight: bold;
+    font-size: 3em;
+    padding: 5px 30px;
+    border-radius: 0 15px 15px 0;
+}
+
+table {
+    margin-left: 156px;
+    margin-top: 25px;
+}
+
+#wrapRadio {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 150px;
+    height: 250px;
+    background-color: #9b7742;
+    font-size: 1.7em;
+    text-align: center;
+    color: lightgrey;
+    cursor: pointer;
+}
+
+.radio {
+    opacity: 0;
+    position: absolute;
+}
+
+.radio + label {
+    border: 3px solid lightgray;
+    border-radius: 10px;
+    color: black;
+    background-color: lightgray;
+    display: block;
+    text-align: center;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.radio:checked + label {
+    background-color: #9b7742;
+}
+
+#wrapReticle {
+    margin-left: 65px;
+    width: 1293px;
+    height: 1800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.blockPizzaContainer {
+    width: 280px;
+    height: 417px;
+    border: 2px solid white;
+    background-color: rgba(211, 211, 211, 0.81);
+    padding: 10px;
+    font-size: 3em;
+    cursor: pointer;
+    padding-top: 280px;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.trans div {
+    transform: rotateY(180deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: rgba(211, 211, 211, 0.81);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding: 222px 0 0 30px;
+}
+
+.ingredientsBlock {
+    width: 270px;
+    height: 255px;
+    padding: 7px;
+    font-size: .5em;
+    opacity: 1;
+    list-style-type: none;
+    margin-left: 20px;
+}
+.deduct {
+    text-decoration: line-through;
+}
+.add {
+    text-decoration: none;
+}
+.caloriesBlock {
+    font-size: .5em;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.priceBlock {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#question {
+    background-color: lightgrey;
+    font-size: 2em;
+    padding: 10px 30px;
+    margin: 20px;
+    opacity: .8;
+    border-radius: 15px;
+}
+
+select {
+    margin-left: 70px;
+    font-size: .5em;
+    width: 200px;
+}
+
+#buttonIngredient {
+    position: absolute;
+    top: 238px;
+    right: 280px;
+    height: 33px;
+    width: 215px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: lightgrey;
+    opacity: .8;
+    font-size: 1.7em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#eventReticle {
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    display: inline-block;
+    background-color: lightgrey;
+    opacity: .8;
+    margin-left: 20px;
+
+}
+
+#eventList {
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    display: inline-block;
+    background-color: lightgrey;
+    opacity: .8;
+}
